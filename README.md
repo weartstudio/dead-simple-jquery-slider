@@ -3,11 +3,11 @@ This is a really lightweight jQuery Slider Script to make a simple slider for yo
 
 ## Usage
 The script use `jQuery` to run, and the main script file. Put these into the footer.
-```
+```html
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="dead-simple-slider.js"></script>
 ```
 You need to add the `header` the style, or copy the content to your main stylesheet.
-```
+```html
 <script src="dead-simple-slider.css"></script>
 ```
