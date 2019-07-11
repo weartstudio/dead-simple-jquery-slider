@@ -10,7 +10,7 @@
 /* end */
 
 /* items */
-  .dss>*{
+  .dss>.dss_item{
     float: left;
     width: 100%;
     margin-right: -100%;
@@ -19,7 +19,7 @@
     opacity: 0;
     visibility:hidden;
   }
-  .dss>*.active{ opacity: 1; visibility:visible; transition:visibility 0.3s linear,opacity 0.3s linear;  }
+  .dss>.dss_item.active{ opacity: 1; visibility:visible; transition:visibility 0.3s linear,opacity 0.3s linear;  }
 /* end */
 
 /* next/prev button */
