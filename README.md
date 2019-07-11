@@ -9,5 +9,5 @@ The script use `jQuery` to run, and the main script file. Put these into the foo
 ```
 You need to add the `header` the style, or copy the content to your main stylesheet.
 ```html
-<script src="dead-simple-slider.css"></script>
+<link rel="stylesheet" href="dead-simple-slider.css">
 ```
