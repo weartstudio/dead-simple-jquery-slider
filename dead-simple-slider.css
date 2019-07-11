@@ -1,6 +1,6 @@
 /* Dead Simple jQuery Slider */
 
-/* basic styles */
+/* container */
   .dss {
     width: 100%;
     position: relative;
@@ -9,22 +9,39 @@
   }
 /* end */
 
+/* items */
+  .dss>*{
+    float: left;
+    width: 100%;
+    margin-right: -100%;
+
+    transition:visibility 0.3s linear,opacity 0.3s linear;
+    opacity: 0;
+    visibility:hidden;
+  }
+  .dss>*.active{ opacity: 1; visibility:visible; transition:visibility 0.3s linear,opacity 0.3s linear;  }
+/* end */
+
 /* next/prev button */
 
   /* basic button styles */
     .dss-next,
     .dss-prev {
-      display: flex;
-      position: absolute;
-      z-index: 1;
-      align-items: center;
-      justify-content: center;
-      height: calc(100% - 29px);
+      float: none;
       width: auto;
+      height: 100%;
       text-align: center;
       cursor: pointer;
-      top: 28.8px;
-      bottom: 0;
+
+      position: absolute;
+      z-index: 1;
+      top: 0px;
+      bottom: 0px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
       border: none;
       background: transparent;
       color: rgba(0, 0, 0, 0.25);
