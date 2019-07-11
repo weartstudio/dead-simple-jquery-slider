@@ -1,3 +1,51 @@
+/* Dead Simple jQuery Slider */
 
+/* basic styles */
+  .dss {
+    width: 100%;
+    position: relative;
+    display: block;
+    overflow: hidden;
+  }
+/* end */
 
-/*# sourceMappingURL=dead-simple-slider.css.map */
+/* next/prev button */
+
+  /* basic button styles */
+    .dss-next,
+    .dss-prev {
+      display: flex;
+      position: absolute;
+      z-index: 1;
+      align-items: center;
+      justify-content: center;
+      height: calc(100% - 29px);
+      width: auto;
+      text-align: center;
+      cursor: pointer;
+      top: 28.8px;
+      bottom: 0;
+      border: none;
+      background: transparent;
+      color: rgba(0, 0, 0, 0.25);
+      font-size: 20px;
+      padding: 0 5px;
+    }
+    .dss-next:hover,
+    .dss-prev:hover {
+      color: #000;
+      background: rgba(0, 0, 0, 0.05);
+    }
+  /* end */
+
+  /* position buttons */
+    .dss-prev { left: 0px; }
+    .dss-next { right: 0px; }
+  /* end */
+
+  /* reset button style */
+    .dss-next:focus, .dss-next:active,
+    .dss-prev:focus, .dss-prev:active { outline: none; }
+  /* end */
+
+/* end */
